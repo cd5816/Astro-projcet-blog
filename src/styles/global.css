@@ -5,11 +5,14 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
+  max-width: 60ch;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
   line-height: 1.5;
+  color: hsla(60, 98.0%, 0.7%, 0.906);
+  font-size: 1.125rem;
 }
 
 * {
@@ -19,4 +22,22 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: hsl(24, 70%, 99%);
+  padding: 0.5rem;
+  background-color: hsl(24, 100%, 95.3%);
+}
+
+#menu a {
+  color: hsl(24, 100%, 37.0%);
+  text-decoration: none;
+}
+
+a {
+  color: hsl(226, 55.0%, 45.0%);
+  text-decoration: none;
 }

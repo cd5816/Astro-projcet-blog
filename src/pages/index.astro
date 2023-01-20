@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 const pageTitle = "Home Page";
 ---
 
@@ -9,21 +11,13 @@ const pageTitle = "Home Page";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-		<style>
-			body {
-				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-					Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-			}
-
-			p {
-				font-size: 1.125rem;
-			}
-		</style>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<nav id="menu">
+			<a href="/">Home</a>
+			<a href="/about/">About</a>
+			<a href="/blog/">Blog</a>
+		</nav>
 		<h1>{pageTitle}</h1>
 		<p>This is going to be my personal blog. I hope I can get this to work.</p>
 	</body>
