@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -13,6 +15,10 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = "hsla(153, 99.9%, 21%, 0.906)";
+const fontWeight = "bold";
+const textCase = "Capitalize";
 ---
 
 <html lang="en">
@@ -22,21 +28,53 @@ const goal = 3;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-		<style>
-			body {
-				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-					Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		<style define:vars={{ skillColor, fontWeight, textCase }}>
+			/* body {
+				font-family: -apple-system-ui-serif, ui-serif, "Georgia", serif, "Segoe UI", Roboto,
+					Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+				/* color: hsla(15, 99.4%, 11%, 0.934); */
+				background-color: hsla(24, 95.8%, 46.5%, 0.044);
+			} */
+
+			#menu {
+				display: flex;
+				justify-content: space-evenly;
+				background-color: hsl(24, 70%, 99%);
+				padding: 0.5rem;
+			}
+
+			h1 {
+				color: hsla(60, 98%, 0.7%, 0.906);
+				font-size: 4rem;
 			}
 
 			p {
 				font-size: 1.125rem;
 			}
+
+			a:not(#menu a) {
+				color: hsl(226, 55%, 45%);
+			}
+
+			a:not(#menu a):hover {
+				color: hsl(226, 62%, 17%);
+			}
+
+			.skill {
+				/* color: hsla(153, 99.9%, 21%, 0.906); */
+				color: var(--skillColor);
+				font-weight: var(--fontWeight);
+				text-transform: var(--textCase);
+				/* width: max-content; */
+			}
 		</style>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<nav id="menu">
+			<a href="/">Home</a>
+			<a href="/about/">About</a>
+			<a href="/blog/">Blog</a>
+		</nav>
 		<h1>{pageTitle}</h1>
 		<p>
 			This is my about page. I just starting learning web development. And, this is my first site
@@ -62,10 +100,13 @@ const goal = 3;
 				)
 			}
 		</ul>
-		<p>My skills are:</p>
-		<ul>
-			{skills.map(skill => <li>{skill}</li>)}
-		</ul>
+		<section class="skills">
+			<h2>Skills</h2>
+			<p>My skills are:</p>
+			<ul>
+				{skills.map(skill => <li class="skill">{skill}</li>)}
+			</ul>
+		</section>
 		{happy && <p>I am happy to be learning Astro!</p>}
 
 		{finished && <p>I finished this tutorial!</p>}
