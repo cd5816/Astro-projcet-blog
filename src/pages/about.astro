@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
 const pageTitle = "About Me";
 
@@ -36,16 +38,7 @@ const textCase = "Capitalize";
 			background-color: hsla(24, 95.8%, 46.5%, 0.044);
 
 			h1 {
-				color: hsla(60, 98%, 0.7%, 0.906);
 				font-size: 4rem;
-			}
-
-			a:not(#menu a) {
-				color: hsl(226, 55%, 45%);
-			}
-
-			a:not(#menu a):hover {
-				color: hsl(226, 62%, 17%);
 			}
 
 			.skill {
@@ -53,15 +46,12 @@ const textCase = "Capitalize";
 				color: var(--skillColor);
 				font-weight: var(--fontWeight);
 				text-transform: var(--textCase);
-				/* width: max-content; */
 			}
 		</style>
 	</head>
 	<body>
 		<nav id="menu">
-			<a href="/">Home</a>
-			<a href="/about/">About</a>
-			<a href="/blog/">Blog</a>
+			<Navigation />
 		</nav>
 		<h1>{pageTitle}</h1>
 		<p>
@@ -100,5 +90,6 @@ const textCase = "Capitalize";
 		{finished && <p>I finished this tutorial!</p>}
 
 		{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+		<Footer />
 	</body>
 </html>

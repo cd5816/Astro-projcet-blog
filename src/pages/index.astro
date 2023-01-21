@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
 const pageTitle = "Home Page";
 ---
@@ -14,11 +16,13 @@ const pageTitle = "Home Page";
 	</head>
 	<body>
 		<nav id="menu">
-			<a href="/">Home</a>
-			<a href="/about/">About</a>
-			<a href="/blog/">Blog</a>
+			<Navigation />
 		</nav>
 		<h1>{pageTitle}</h1>
-		<p>This is going to be my personal blog. I hope I can get this to work.</p>
+		<p>
+			This is the first website I've deployed without using a product like Ghost or Squarespace.
+			Here, I'm using <a href="https://astro.build" target="_blank">Astro.</a>
+		</p>
+		<Footer />
 	</body>
 </html>
