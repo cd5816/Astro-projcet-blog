@@ -47,3 +47,7 @@ a {
   color: hsl(226, 55.0%, 45.0%);
   text-decoration: none;
 }
+
+a:hover {
+  color: hsl(153, 67.0%, 28.5%);
+}

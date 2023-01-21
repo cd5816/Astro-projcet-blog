@@ -3,6 +3,11 @@ const platform = "github";
 const username = "withastro";
 ---
 
-<footer class="footer">
-	<p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}></a>!</p>
+<footer>
+	<p>
+		Learn more about my projects on <a
+			href={`https://www.${platform}.com/${username}`}
+			target="_blank">{platform}</a
+		>!
+	</p>
 </footer>
