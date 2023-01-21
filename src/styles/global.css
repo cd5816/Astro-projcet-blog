@@ -16,6 +16,11 @@ body {
   font-size: 1.125rem;
 }
 
+.footer {
+  padding-block-end: 2rem;
+  margin-block-end: 2rem;
+}
+
 * {
   box-sizing: border-box;
 }
