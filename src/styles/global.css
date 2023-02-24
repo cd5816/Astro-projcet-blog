@@ -162,6 +162,11 @@ p {
   margin-block-end: 1.5rem;
 }
 
+li {
+  margin-bottom: 0.25rem;
+}
+
+
 .footer {
   padding-block-end: 2rem;
   margin-block-end: 2rem;
@@ -178,6 +183,10 @@ p {
 #menu a {
   color: var(--blue11);
   text-decoration: none;
+}
+
+#menu a:hover {
+  text-decoration: underline;
 }
 
 a {
