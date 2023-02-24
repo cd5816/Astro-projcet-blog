@@ -163,6 +163,10 @@ h1 {
       3rem);
 }
 
+h2 > p:first-child {
+  margin-block-end: 1.5em;
+}
+
 p {
   margin-block-end: 1.5em;
 }
@@ -192,7 +196,7 @@ a:hover {
 p + ul,
 p + ol {
   margin-block-start: 0;
-  margin-block-end: 1.5em;
+  margin-block-end: 1em;
 }
 
 ul li:last-child,
