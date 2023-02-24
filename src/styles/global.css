@@ -175,11 +175,10 @@ li {
   display: block;
   width: 90px;
   height: 2px;
-  margin: 2rem auto;
+  margin: 0 auto;
   border: none;
   background-color: var(--slate6)
 }
-
 
 #menu {
   display: flex;
