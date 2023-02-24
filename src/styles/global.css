@@ -186,12 +186,11 @@ li {
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem;
-  /* background-color: var(--blue2); */
+  background-color: var(--blue2);
   margin-block-start: 2rem;
   margin-block-end: 3.25rem;
-  border-bottom: 2px solid var(--slate6);
-  border-width: 100%;
-  /* border-radius: 8px; */
+  border: 1px solid var(--blue6);
+  border-radius: 8px;
 }
 
 #menu a {
