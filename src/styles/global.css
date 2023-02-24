@@ -188,6 +188,7 @@ li {
   background-color: var(--blue2);
   margin-block-start: 2rem;
   margin-block-end: 3.25rem;
+  border: 1px solid var(--blue6)
 }
 
 #menu a {
