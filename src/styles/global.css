@@ -87,7 +87,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem;
-  background-color: color(--blue2)
+  background-color: color(--blue3)
 }
 
 #menu a {
@@ -96,10 +96,10 @@ h1 {
 }
 
 a {
-  color: var(--blue10);
+  color: var(--blue11);
   text-decoration: none;
 }
 
 a:hover {
-  color: hsl(153, 67.0%, 28.5%);
+  color: var(--blue4);
 }
