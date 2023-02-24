@@ -164,11 +164,11 @@ h1 {
 }
 
 h2 {
-  margin-block-end: 1.5em;
+  margin-block-end: 1rem;
 }
 
 p {
-  margin-block-end: 1.5em;
+  margin-block-end: 1.5rem;
 }
 
 #menu {
@@ -196,10 +196,10 @@ a:hover {
 p + ul,
 p + ol {
   margin-block-start: 0;
-  margin-block-end: 1em;
+  margin-block-end: 1rem;
 }
 
 ul li:last-child,
 ol li:last-child {
-  margin-block-end: 1.5em;
+  margin-block-end: 1.5rem;
 }
