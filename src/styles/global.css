@@ -88,16 +88,15 @@ h1 {
   justify-content: space-evenly;
   background-color: hsl(24, 70%, 99%);
   padding: 0.5rem;
-  background-color: hsl(24, 100%, 95.3%);
+  background-color: color(--blue2)
 }
 
 #menu a {
-  color: hsl(24, 100%, 37.0%);
-  text-decoration: none;
+  color: var(--blue) text-decoration: none;
 }
 
 a {
-  color: var(--blue9);
+  color: var(--blue10);
   text-decoration: none;
 }
 
