@@ -87,7 +87,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem;
-  background-color: color(--blue3)
+  background-color: var(--blue2)
 }
 
 #menu a {
