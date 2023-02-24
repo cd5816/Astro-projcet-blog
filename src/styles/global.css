@@ -92,7 +92,7 @@ h1 {
   justify-content: space-evenly;
   padding: 0.5rem;
   background-color: var(--blue2);
-  margin-block-end: 2rem;
+  margin-block-end: 4rem;
 }
 
 #menu a {
