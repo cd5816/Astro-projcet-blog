@@ -184,9 +184,12 @@ li {
 .container {
   border-bottom: 2px solid var(--slate6);
   padding-block-start: .5rem;
+  width: 100%;
+  /* margin-inline-start: auto;
+  margin-inline-end: auto; */
   margin-block-end: 2rem;
   padding-block-end: 1rem;
-  min-width: 100vw;
+  max-width: 60ch;
   display: flex;
   justify-content: space-evenly;
 }
@@ -197,6 +200,8 @@ li {
   width: 100%;
   max-width: 60ch;
   margin: 2rem auto 2rem;
+  /* margin-inline-start: auto;
+  margin-inline-end: auto; */
   /* background-color: var(--blue2); */
   /* margin-block-start: 2rem;
   margin-block-end: 3.25rem;
