@@ -173,9 +173,10 @@ li {
 
 .centered-separator {
   display: block;
-  width: 30px;
+  width: 90px;
   height: 2px;
-  margin: 0 auto;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
   border: none;
   background-color: var(--slate6)
 }
