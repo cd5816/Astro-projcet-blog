@@ -181,16 +181,26 @@ li {
   background-color: var(--slate6)
 }
 
+.container {
+  border-bottom: 2px solid var(--slate6);
+  margin-block-end: 2rem;
+  padding-block-end: 1rem;
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 #menu {
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem;
-  background-color: var(--blue2);
-  margin-block-start: 2rem;
-  margin-block-end: 3.25rem;
-  border: 1px solid var(--blue6);
-  border-radius: 8px;
+  max-width: 50ch;
+  margin: 2rem auto 3.25rem;
+  /* background-color: var(--blue2); */
+  /* margin-block-start: 2rem;
+  margin-block-end: 3.25rem; */
+  /* border: 1px solid var(--blue6);
+  border-radius: 8px; */
 }
 
 #menu a {
