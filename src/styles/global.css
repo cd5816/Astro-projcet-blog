@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Untitled Sans';
+  src: url('/fonts/UntitledSans-Regular.woff2') format('woff2');
+}
+
+
+
 html {
   background-color: hsla(24, 95.8%, 46.5%, 0.044);
   font-family: -apple-system, ui-serif, "Georgia", serif, "Segoe UI", Roboto,
@@ -5,6 +12,8 @@ html {
 }
 
 body {
+  font-family: 'Untitled Sans', ui-serif, "Georgia", serif, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   width: 100%;
   max-width: 60ch;
   margin-inline-start: auto;
