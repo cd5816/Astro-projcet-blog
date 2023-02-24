@@ -200,19 +200,13 @@ li {
   background-color: var(--blue2);
   margin-block-start: 2rem;
   margin-block-end: 3.25rem;
-  border: 1px solid var(--blue6);
-  border-radius: 8px;
-  border-bottom: none;
+  /* border: 1px solid var(--blue6); */
+  /* border-radius: 8px; */
+  border-bottom: 2px solid var(--slate6);
+  width: 100vw;
+  box-sizing: border-box;
 }
 
-#menu::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid var(--blue6);
-  margin-block-start: 0.5rem;
-  margin-block-end: -1px;
-}
 
 
 #menu a {
