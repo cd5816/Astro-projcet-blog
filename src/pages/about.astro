@@ -17,10 +17,6 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = false;
 const goal = 3;
-
-const skillColor = "hsla(153, 99.9%, 21%, 0.906)";
-const fontWeight = "regular";
-const textCase = "Capitalize";
 ---
 
 <html lang="en">
@@ -30,20 +26,6 @@ const textCase = "Capitalize";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-		<style define:vars={{ skillColor, fontWeight, textCase }}>
-			background-color: hsla(24, 95.8%, 46.5%, 0.044);
-
-			h1 {
-				font-size: 4rem;
-			}
-
-			.skill {
-				/* color: hsla(153, 99.9%, 21%, 0.906); */
-				color: var(--skillColor);
-				font-weight: var(--fontWeight);
-				text-transform: var(--textCase);
-			}
-		</style>
 	</head>
 	<body>
 		<nav id="menu">
@@ -55,17 +37,24 @@ const textCase = "Capitalize";
 			built with Astro.
 		</p>
 		<p>
-			I'm focusing my learning through these courses:
-			<ul>
-				<li><a href="https://learnjavascript.online">Learn JavaScript</a></li>
-				<li><a href="https://css-for-js.dev">CSS-for-JS</a></li>
-				<li><a href="https://www.joyofreact.com">The Joy of React</a></li>
+			I'm focusing my learning through these courses:<ul>
+				<li>
+					<a href="https://learnjavascript.online">Learn JavaScript</a>
+				</li>
+				<li>
+					<a href="https://css-for-js.dev">CSS-for-JS</a>
+				</li>
+				<li>
+					<a href="https://www.joyofreact.com">The Joy of React</a>
+				</li>
 			</ul>
 		</p>
 		<p>Here are a few facts about me:</p>
 		<ul>
 			<li>My name is {identity.firstName}.</li>
-			<li>I live in the {identity.country} and I work as a {identity.occupation}.</li>
+			<li>
+				I live in the {identity.country} and I work as a {identity.occupation}.
+			</li>
 			{
 				identity.hobbies.length >= 2 && (
 					<li>
@@ -88,4 +77,4 @@ const textCase = "Capitalize";
 		{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 		<Footer />
 	</body>
-</html>
+</html>;
