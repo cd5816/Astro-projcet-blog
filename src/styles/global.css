@@ -171,6 +171,15 @@ li {
   margin-block-end: 2rem;
 }
 
+.centered-separator {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+  border: none;
+  background-color: var(--slate6)
+}
+
 #menu {
   display: flex;
   justify-content: space-evenly;
