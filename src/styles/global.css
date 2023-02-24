@@ -86,13 +86,13 @@ h1 {
 #menu {
   display: flex;
   justify-content: space-evenly;
-  background-color: hsl(24, 70%, 99%);
   padding: 0.5rem;
   background-color: color(--blue2)
 }
 
 #menu a {
-  color: var(--blue) text-decoration: none;
+  color: var(--blue11);
+  text-decoration: none;
 }
 
 a {
