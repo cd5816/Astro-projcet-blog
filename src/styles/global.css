@@ -156,12 +156,15 @@ body {
 
 
 h1 {
-  line-height: 1.75rem;
   margin-block-end: 2.5rem;
   font-weight: 700;
   font-size: clamp(1.5rem,
       4vw + 1rem,
       3rem);
+}
+
+p {
+  margin-block-end: 1.5em;
 }
 
 #menu {
