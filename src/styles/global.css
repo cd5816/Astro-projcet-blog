@@ -153,17 +153,18 @@ h1 {
       3rem);
 }
 
-.footer {
-  padding-block-end: 2rem;
-  margin-block-end: 2rem;
-}
-
 h2 {
-  margin-block-end: 1rem;
+  margin-block-start: 2.75rem;
+  margin-block-end: 1.75rem;
 }
 
 p {
   margin-block-end: 1.5rem;
+}
+
+.footer {
+  padding-block-end: 2rem;
+  margin-block-end: 2rem;
 }
 
 #menu {
