@@ -175,7 +175,7 @@ li {
   display: block;
   width: 90px;
   height: 2px;
-  margin: 0 auto;
+  margin: 4rem auto 3rem;
   border: none;
   background-color: var(--slate6)
 }
