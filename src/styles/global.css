@@ -182,11 +182,11 @@ p {
 
 a {
   color: var(--blue11);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: var(--blue4);
+  text-decoration: none;
 }
 
 p > ul,
