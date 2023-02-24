@@ -163,7 +163,7 @@ h1 {
       3rem);
 }
 
-h2 > p:first-child {
+h2 {
   margin-block-end: 1.5em;
 }
 
