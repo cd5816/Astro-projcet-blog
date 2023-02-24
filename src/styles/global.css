@@ -186,6 +186,7 @@ li {
   justify-content: space-evenly;
   padding: 0.5rem;
   background-color: var(--blue2);
+  margin-block-start: 2rem;
   margin-block-end: 3.25rem;
 }
 
