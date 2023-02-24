@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  font-family: 'Untitled Sans', ui-serif, "Georgia", serif, "Segoe UI", Roboto,
+  font-family: 'Untitled Sans Light', ui-serif, "Georgia", serif, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   width: 100%;
   max-width: 60ch;
@@ -62,7 +62,7 @@ body {
   line-height: 1.5;
   color: hsla(60, 98.0%, 0.7%, 0.906);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
