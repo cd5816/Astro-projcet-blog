@@ -139,7 +139,7 @@ body {
   margin-inline-end: auto;
   padding-inline-start: 16px;
   padding-inline-end: 16px;
-  color: var(--blue12);
+  color: var(--slate12);
   font-size: 1.125rem;
   font-weight: 400;
   font-style: normal;
@@ -181,12 +181,66 @@ li {
   background-color: var(--slate6)
 }
 
+/** GPT3 code suggestions */
+
 .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60ch;
+  margin-inline: auto;
+  padding-inline: 16px;
+  margin-block-end: 2rem;
+  padding-bottom: .75rem;
+  border-bottom: 2px solid var(--slate6);
+  position: relative;
+}
+
+#menu {
+  margin-block-start: 2rem;
+  margin-block-end: 3.25rem;
+}
+
+#menu > .container > a {
+  margin-inline-end: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #menu > .container > a {
+    margin-inline-end: 0;
+    margin-block-end: 0.5rem;
+  }
+
+  #menu > .container > a:last-child {
+    margin-block-end: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--slate6);
+  }
+}
+
+
+/** Current CSS that works fine */
+
+/* .container {
   border-bottom: 2px solid var(--slate6);
   padding-block-start: .5rem;
   width: 100%;
-  /* margin-inline-start: auto;
-  margin-inline-end: auto; */
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   margin-block-end: 2rem;
   padding-block-end: 1rem;
   max-width: 60ch;
@@ -200,21 +254,21 @@ li {
   width: 100%;
   max-width: 60ch;
   margin: 2rem auto 2rem;
-  /* margin-inline-start: auto;
-  margin-inline-end: auto; */
-  /* background-color: var(--blue2); */
-  /* margin-block-start: 2rem;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  background-color: var(--blue2);
+  margin-block-start: 2rem;
   margin-block-end: 3.25rem;
-  /* border: 1px solid var(--blue6);
-  border-radius: 8px; */
-}
+  border: 1px solid var(--blue6);
+  border-radius: 8px;
+} */
 
-#menu > * {
+/* #menu > * {
   padding: 12px auto;
   max-width: 60ch;
   width: 100%;
   justify-content: space-evenly;
-}
+} */
 
 #menu a {
   color: var(--blue11);
