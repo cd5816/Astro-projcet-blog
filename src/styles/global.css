@@ -271,11 +271,12 @@ li {
 } */
 
 #menu a {
-  color: var(--blue11);
+  color: var(--slate11);
   text-decoration: none;
 }
 
 #menu a:hover {
+  color: var(--slate12);
   text-decoration: underline;
 }
 
